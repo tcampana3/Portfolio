@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Anthony Campana - Projects</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="project">
+                <h3>E-commerce Store Development (Shop Fusion)</h3>
+                <p>Developed a single-page e-commerce application using <strong>React.js</strong>, <strong>Node.js</strong>, <strong>Express.js</strong>, and <strong>MongoDB</strong>. The project includes a responsive user interface designed with <strong>Bootstrap</strong> and <strong>CSS</strong>. Key features include product display pages, a shopping cart, a checkout process, and an Admin panel for CRUD operations on products. Integrated <strong>MongoDB</strong> to organize products into categories like food, apparel, and appliances, optimizing data retrieval and update operations.</p>
+                
+                <!-- Container for images to be side-by-side -->
+                <div class="project-images">
+                    <img src="./images/GroceryView.png" alt="E-commerce Store Development (Shop Fusion)" onclick="openModal(this)">
+                    <img src="./images/CheckoutConfirmation.png" alt="Shop Fusion Checkout Page" onclick="openModal(this)">
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project">
+                <h3>Archived Message Reconstruction</h3>
+                <p>Built a Java-based binary-tree decoder to reconstruct archived messages from compressed files. Utilized <strong>bitwise operations</strong> and recursive tree construction to decode messages efficiently. This project also included calculating message-specific statistics, such as average bits per character and space savings, as bonus features. This project enhanced skills in <strong>Java</strong> and binary-tree data structures.</p>
+            
+                <div class="project-images">
+                    <img src="./images/BinarySearchTree.png" alt="Archived Message Reconstruction" onclick="openModal(this)">
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project">
+                <h3>LEGv8 Disassembler for Machine-Level Programming</h3>
+                <p>Created a Java-based disassembler to convert binary LEGv8 instructions into assembly language. Managed endianness issues and optimized the process using bitwise operations extensively. Additionally, developed <strong>shell scripts</strong> to automate the build and execution processes, improving reliability and ease of use for the disassembler. This project involved <strong>Java</strong> programming and low-level machine language concepts.</p>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project">
+                <h3>2D Point Sorting and Median Calculation</h3>
+                <p>Developed a Java program to sort 2D integer points using <strong>selection sort</strong>, <strong>insertion sort</strong>, <strong>merge sort</strong>, and <strong>quicksort</strong>. Calculated the median point based on sorted coordinates and compared the execution times of each sorting algorithm to analyze efficiency. This project strengthened understanding of <strong>Java</strong> programming, sorting algorithms, and computational efficiency.</p>
+            
+                <div class="project-images">
+                    <img src="./images/Sorting.gif" alt="2D Point Sorting and Median Calculation" onclick="openModal(this)">
+                </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="project">
+                <h3>Profit Utilization for Internet Service</h3>
+                <p>Simulated customer behavior on an n x m grid, developing Java classes to calculate yearly profit utilization for internet service. This project involved modeling and data analysis in <strong>Java</strong> to understand user behavior and optimize service distribution.</p>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="project">
+                <h3>Dijkstra’s Algorithm Implementation</h3>
+                <p>Implemented Dijkstra’s algorithm in <strong>Java</strong> to compute the shortest path from a single source to all vertices in a directed graph without negative weights. Leveraged <strong>priority queues</strong> for efficient processing, optimizing the algorithm to handle real-world applications involving complex networks. This project deepened understanding of graph theory and algorithmic optimization.</p>
+            
+                <div class="project-images">
+                    <img src="./images/Djikstra.png" alt="Dijkstra’s Algorithm Implementation" onclick="openModal(this)">
+                </div>
+            </div>
+
+            <!-- Project 7 -->
+            <div class="project">
+                <h3>Stout List - Custom Doubly Linked List Implementation</h3>
+                <p>Developed a specialized doubly linked list, called the Stout List, to handle variable node capacities. Each node in this list can hold multiple elements, allowing for an efficient structure that minimizes memory overhead by reducing the number of node pointers. Implemented complex features including custom iterators for traversing and modifying the list and an insertion sort algorithm for sorting list elements. This project was built in <strong>Java</strong> and involved in-depth work with <strong>AbstractSequentialList</strong> and <strong>ListIterator</strong> interfaces.</p>
+
+                <div class="project-images">
+                <img src="./images/DoublyLinkedList.png" alt="Stout List Structure" onclick="openModal(this)">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Anthony Campana</p>
+    </footer>
+
+
+    <!-- JavaScript for Modal Functionality -->
+    <script>
+        function openModal(image) {
+            document.getElementById("imageModal").style.display = "block";
+            document.getElementById("modalImg").src = image.src;
+            document.getElementById("caption").innerHTML = image.alt;
+        }
+        
+        function closeModal() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+    </script>
+
+
+</body>
+</html>
