@@ -114,6 +114,20 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+
+.project-3image {
+    display: flex;
+    gap: 20px; /* Space between images */
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.project-3image img {
+    width: 30%; /* Adjust width as needed to ensure images fit side by side */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* Modal Styles */
 .modal {
     display: none; /* Hidden by default */
